@@ -2,7 +2,10 @@
 This is an ongoing project, so updates will follow.
 ESP32 with Si5351 and web server to build a low power Transmitter with AM and FM.
 This project allows to build an low power Transmitter, actually a FVO with AM and FM modulation. First inspiration came from the need for an RF signal generator to be used in home laboratory with HAM radios.
-It would allow to experiment with radios and tune them properly. For conveniant usage it can be placed at any corner in the lab or even other house places where the WiFi is provided.
+Second inspiration I got from excelent work of Bitluni in his GitHub repositories and videos, particularly about how to program ULP (Ultra Low Power Processor in ESP32). Others too, like Random Nerd Tutorials....
+The bigest chalange was how to fast sample internal ADC and apply gain and put it in internal DAC. I could do it only with ULP. Tried also with I2S for audio stream, but didnt succeed. Maybe someone will upgrade the code with this. I2S microphones operate with much lower noise.
+
+This project will allow you to experiment with radios and tune them properly. For conveniant usage it can be placed at any corner in the lab or even other house places where the WiFi is provided.
 Since it includes teh Web server all the controll can be managed by connecting smart phones to its IP adress, simply using the ordinarry browser.
 To use it in Arduino IDE you have to replace the Si5351Arduino library with my Si5351-with-FM library which will provide also the FM modulation on popular Si5351.
 Set your credentials for WiFi and static IP and it should compile.
