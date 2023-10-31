@@ -13,6 +13,7 @@ Set your credentials for WiFi and static IP and it should compile.
 Features:
 Set remotelly : Frequency, Frequency step, Modulation type, Modulation gain, Step up, Step down, Bias for RF transistors in PA ......
 To operate in FM mode you dont need to build any RF output, while for the AM you need to do it or connect pin 25 to the pin Vout on Si5351.
+Version ulp4 is initial, but limited to depth of modulation. Version ulp5a allows much wider modulation. Improoved versions may follow.
 
 Connections: Audio input is on pin 34  , provide resistor devider for 1,5V bias
              Audio output is on internal DAC pin 25, connect this to RF transistor gate or base to do AM modulation
