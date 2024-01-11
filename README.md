@@ -15,9 +15,9 @@ Set remotelly : Frequency, Frequency step, Modulation type, Modulation gain, Ste
 To operate in FM mode you dont need to build any RF output, while for the AM you need to do it or connect pin 25 to the pin Vout on Si5351.
 Version ulp4 is initial, but limited to depth of modulation. Version ulp5a allows much wider modulation. Improoved versions may follow.
 
-Connections: Audio input is on pin 34  , provide resistor devider for 1,5V bias
-             Audio output is on internal DAC pin 25, connect this to RF transistor gate or base to do AM modulation
-             DAC on pin 26 is for adjasting analog output to regulate RF transistor power or bias
-             Si5351 out is on CLK1, standard esp32 pins for I2C data and clock pins 21 and 22
+Connections: Audio input is on pin 34  , provide resistor devider for about 1,5V bias, and use a capacitor in serie to audio output device.
+             Audio output for driving the AM in PA stage is on pin 25 (ESP32 internal DAC), connect this to RF transistor gate or base to do AM modulation.
+             DAC out on pin 26 is for adjasting analog output to regulate RF transistor power.
+             Si5351 out is on CLK1, standard esp32 pins for I2C data and clock pins 21 is DATA goes to SDA and 22 is CLK goes to SCL.
              
 When using this for some increased power radio transmitters, you have to respect Communication and EMC regulatives for your country and internationally!
