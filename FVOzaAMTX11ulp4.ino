@@ -113,7 +113,7 @@ body {
 h1 {
    color: navy;
    margin-left: 20px;
-   font-size: 150%
+   font-size: 150
 }
 meter {
   width: 240px;
